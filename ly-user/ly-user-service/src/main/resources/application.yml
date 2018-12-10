@@ -4,26 +4,20 @@ spring:
   application:
     name: user-service
   datasource:
-    master:
       driverClassName: com.mysql.jdbc.Driver
-      jdbc-url: jdbc:mysql://localhost:3306/leyou
+      url: jdbc:mysql://96.45.189.113:3306/leyou?characterEncoding=UTF-8&useSSL=false
       username: root
-      password: 123
-    slave:
-      driverClassName: com.mysql.jdbc.Driver
-      jdbc-url: jdbc:mysql://localhost:3306/leyou-slave
-      username: root
-      password: 123
+      password: root
   redis:
-    host: 192.168.206.103
+    host: 96.45.189.113
   rabbitmq:
-    host: 192.168.206.103
-    username: leyou
-    password: leyou
+    host: 96.45.189.113
+    username: smilepet
+    password: smilepet
     virtual-host: /leyou
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:10086/eureka
+      defaultZone: http://localhost:10086/eureka
 mybatis:
   type-aliases-package: com.leyou.item.pojo

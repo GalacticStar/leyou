@@ -4,17 +4,18 @@ spring:
   application:
     name: order-service
   datasource:
-    url: jdbc:mysql://localhost:3306/leyou
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://96.45.189.113:3306/leyou?characterEncoding=UTF-8&useSSL=false
     username: root
-    password: 123
+    password: root
   jackson:
     default-property-inclusion: non_null
   redis:
-    host: 192.168.206.103
+    host: 96.45.189.113
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:10086/eureka
+      defaultZone: http://localhost:10086/eureka
 mybatis:
   type-aliases-package: com.leyou.order.pojo
 ly:
@@ -31,5 +32,5 @@ ly:
     httpConnectTimeoutMs: 1000
     httpReadTimeoutMs: 8000
     tradeType: NATIVE
-    spbillCreateIp: 127.0.0.1
+    spbillCreateIp: localhost
     notifyUrl: http://pj7t76.natappfree.cc/wxpay/notify

@@ -8,13 +8,13 @@ spring:
   data:
     elasticsearch:
       cluster-name: elasticsearch
-      cluster-nodes: 192.168.206.103:9300
+      cluster-nodes: 96.45.189.113:9300
   rabbitmq:
-    host: 192.168.206.103
-    username: leyou
-    password: leyou
+    host: 96.45.189.113
+    username: smilepet
+    password: smilepet
     virtual-host: /leyou
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:10086/eureka
+      defaultZone: http://localhost:10086/eureka

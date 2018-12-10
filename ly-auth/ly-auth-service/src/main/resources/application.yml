@@ -6,7 +6,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:10086/eureka
+      defaultZone: http://localhost:10086/eureka
 ly:
   jwt:
     secret: ly@Login(Auth}*^36)&leYou36%f3q124jflaf2 # 登录校验的密钥

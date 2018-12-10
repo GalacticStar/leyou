@@ -10,7 +10,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:10086/eureka
+      defaultZone: http://localhost:10086/eureka
 ly:
   upload:
     baseUrl: http://image.leyou.com/
@@ -26,4 +26,4 @@ fdfs:
     width: 60
     height: 60
   tracker-list: # tracker地址
-    - 192.168.206.103:22122
+    - 96.45.189.113:22122

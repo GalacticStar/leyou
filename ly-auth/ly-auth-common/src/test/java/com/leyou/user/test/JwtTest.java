@@ -1,4 +1,4 @@
-package com.leyou.auth.test;
+package com.leyou.user.test;
 
 import com.leyou.auth.pojo.UserInfo;
 import com.leyou.auth.utils.JwtUtils;
